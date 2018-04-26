@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B382177209116C00091D3FC /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B382176209116C00091D3FC /* GameViewController.swift */; };
 		40AD2FA3208FBCAD00E9B52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD2FA2208FBCAD00E9B52F /* AppDelegate.swift */; };
 		40AD2FA5208FBCAD00E9B52F /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 40AD2FA4208FBCAD00E9B52F /* GameScene.sks */; };
 		40AD2FA7208FBCAD00E9B52F /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 40AD2FA6208FBCAD00E9B52F /* Actions.sks */; };
 		40AD2FA9208FBCAD00E9B52F /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD2FA8208FBCAD00E9B52F /* GameScene.swift */; };
-		40AD2FAB208FBCAD00E9B52F /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD2FAA208FBCAD00E9B52F /* GameViewController.swift */; };
 		40AD2FAE208FBCAD00E9B52F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40AD2FAC208FBCAD00E9B52F /* Main.storyboard */; };
 		40AD2FB0208FBCAD00E9B52F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40AD2FAF208FBCAD00E9B52F /* Assets.xcassets */; };
 		40AD2FBB208FBCAE00E9B52F /* pongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40AD2FBA208FBCAE00E9B52F /* pongTests.swift */; };
@@ -36,12 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B382176209116C00091D3FC /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		40AD2F9F208FBCAD00E9B52F /* pong.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pong.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40AD2FA2208FBCAD00E9B52F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		40AD2FA4208FBCAD00E9B52F /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		40AD2FA6208FBCAD00E9B52F /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		40AD2FA8208FBCAD00E9B52F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
-		40AD2FAA208FBCAD00E9B52F /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		40AD2FAD208FBCAD00E9B52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40AD2FAF208FBCAD00E9B52F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40AD2FB1208FBCAD00E9B52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 				40AD2FA4208FBCAD00E9B52F /* GameScene.sks */,
 				40AD2FA6208FBCAD00E9B52F /* Actions.sks */,
 				40AD2FA8208FBCAD00E9B52F /* GameScene.swift */,
-				40AD2FAA208FBCAD00E9B52F /* GameViewController.swift */,
+				0B382176209116C00091D3FC /* GameViewController.swift */,
 				40AD2FAC208FBCAD00E9B52F /* Main.storyboard */,
 				40AD2FAF208FBCAD00E9B52F /* Assets.xcassets */,
 				40AD2FB1208FBCAD00E9B52F /* Info.plist */,
@@ -267,7 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40AD2FA9208FBCAD00E9B52F /* GameScene.swift in Sources */,
-				40AD2FAB208FBCAD00E9B52F /* GameViewController.swift in Sources */,
+				0B382177209116C00091D3FC /* GameViewController.swift in Sources */,
 				40AD2FA3208FBCAD00E9B52F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,9 +426,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7G475KGCA;
 				INFOPLIST_FILE = pong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = a.pong;
+				PRODUCT_BUNDLE_IDENTIFIER = jhhs.pong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -441,9 +442,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K7G475KGCA;
 				INFOPLIST_FILE = pong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = a.pong;
+				PRODUCT_BUNDLE_IDENTIFIER = jhhs.pong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;

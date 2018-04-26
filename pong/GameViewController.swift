@@ -1,9 +1,9 @@
 //
 //  GameViewController.swift
-//  pong
+//  Pong
 //
-//  Created by mobileapps on 4/24/18.
-//  Copyright © 2018 mobileapps. All rights reserved.
+//  Created by Margaret A. Hunt on 4/4/18.
+//  Copyright © 2018 phunt1000. All rights reserved.
 //
 
 import UIKit
@@ -15,30 +15,20 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
-        // including entities and graphs.
-        if let scene = GKScene(fileNamed: "GameScene") {
-            
-            // Get the SKScene from the loaded GKScene
-            if let sceneNode = scene.rootNode as! GameScene? {
-                
-                // Copy gameplay related content over to the scene
-                sceneNode.entities = scene.entities
-                sceneNode.graphs = scene.graphs
-                
+        if let view = self.view as! SKView? {
+            // Load the SKScene from 'GameScene.sks'
+            if let scene = SKScene(fileNamed: "GameScene") {
                 // Set the scale mode to scale to fit the window
-                sceneNode.scaleMode = .aspectFill
+                scene.scaleMode = .aspectFill
                 
                 // Present the scene
-                if let view = self.view as! SKView? {
-                    view.presentScene(sceneNode)
-                    
-                    view.ignoresSiblingOrder = true
-                    
-                    view.showsFPS = true
-                    view.showsNodeCount = true
-                }
+                view.presentScene(scene)
             }
+            
+            view.ignoresSiblingOrder = true
+            
+            view.showsFPS = true
+            view.showsNodeCount = true
         }
     }
 
