@@ -47,6 +47,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         bottomPaddle.run(SKAction.moveTo(x: -location.x, duration: 0.2))
         leftPaddle.run(SKAction.moveTo(x: location.x, duration: 0.2))
         rightPaddle.run(SKAction.moveTo(x: -location.x, duration: 0.2))
+        //6
         
     }
 }
