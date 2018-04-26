@@ -12,12 +12,19 @@ import GameplayKit
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
     var topPaddle = SKSpriteNode()
+    var bottomPaddle = SKSpriteNode()
+    var rightPaddle = SKSpriteNode()
+    var leftPaddle = SKSpriteNode()
     
     override func didMove(to view: SKView) {
         
         physicsWorld.contactDelegate = self
         
         topPaddle = self.childNode(withName: "topPaddle") as! SKSpriteNode
+        bottomPaddle = self.childNode(withName: "bottomPaddle") as! SKSpriteNode
+        rightPaddle = self.childNode(withName: "rightPaddle") as! SKSpriteNode
+        leftPaddle = self.childNode(withName: "leftPaddle") as! SKSpriteNode
+        
         let border = SKPhysicsBody(edgeLoopFrom: self.frame)
         self.physicsBody = border
     }
