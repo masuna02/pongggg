@@ -22,7 +22,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         self.physicsBody = border
     }
     func didBegin(_ contact: SKPhysicsContact) {
-        print(contact.bodyA.node?.name)
+        print(contact.bodyA.node?.name as Any)
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
